@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:text="|欢迎,${user.phone}|">雷军</span>
+<span th:if="${money} > 10000">富豪</span>
+<span th:unless="${money} > 10000">小康</span>
+<span th:text="${money > 10000 ? '富豪' : '小康' }" ></span>
+<!--<table>-->
+    <!--<tr>-->
+        <!--<td>姓名</td>-->
+        <!--<td>密码</td>-->
+    <!--</tr>-->
+    <!--<tr th:each="user : ${users}">-->
+        <!--<td th:text="${user.username}">姓名</td>-->
+        <!--<td th:text="${user.password}">密码</td>-->
+    <!--</tr>-->
+    <!--<hr/>-->
+    <!--<input th:value="${#dates.format(now,'yyyy-MM-dd HH:mm:ss')}"/>-->
+<!--</table>-->
+</body>
+</html>
